@@ -1,0 +1,17 @@
+<h1>Todos</h1>
+
+      <ul class="collection with-header">
+        {{#each todos}}
+        <li class="collection-item">
+          <div>
+              <label>
+                {{inputCheckbox completed _id}}
+                <span>{{title}}</span>
+              </label>
+            <a href="/delete/{{_id}}" class="secondary-content">
+              <i class="material-icons">delete</i>
+            </a>
+          </div>
+        </li>
+        {{/each}}
+      </ul>  
